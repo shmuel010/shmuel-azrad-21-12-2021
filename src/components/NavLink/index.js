@@ -4,6 +4,8 @@ import {NavLinkWrapper, NavLinkWrapperChooser} from "./style";
 
 
 const NavLink = ({ text, path }) => {
+	console.log(location)
+	console.log(location.pathname)
 	const history = useNavigate();
 
 	const onClickLink = () => {
@@ -11,15 +13,13 @@ const NavLink = ({ text, path }) => {
 	};
 
 	return (<div>
-		{location.pathname === path ?
+		{window.location.pathname === path ?
 			(<NavLinkWrapperChooser  onClick={() => onClickLink()}>
 				{text}
 			</NavLinkWrapperChooser>):
 			(<NavLinkWrapper  onClick={() => onClickLink()}>
 					{text}
 			</NavLinkWrapper>)
-
-
 		}
 
 
