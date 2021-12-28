@@ -131,7 +131,7 @@ export const DailyForecasts = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   width: 80vw;
-  bottom: -130px;
+  bottom: -180px;
   @media only screen and (max-width: 900px) {
     top: 180px;
     justify-content: center;
