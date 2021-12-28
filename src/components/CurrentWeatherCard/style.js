@@ -128,7 +128,7 @@ export const DailyForecasts = styled.div`
   width: 80vw;
   bottom: -130px;
   @media only screen and (max-width: 900px) {
-    top: 130px;
+    top: 180px;
     justify-content: center;
   }
   @media only screen and (max-width: 460px) {
