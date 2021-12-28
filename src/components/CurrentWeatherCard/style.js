@@ -48,20 +48,25 @@ export const CurrentWeatherRow = styled.div`
   justify-content: center;
   display: flex;
   position: relative;
+  @media only screen and (max-width: 580px) {
+    right: 31px;
+  }
 `;
 export const IconWrapper = styled.div`
   flex: 1;
   justify-content: center;
   align-items: center;
-  display: flex;
+  //display: flex;
   flex-direction: row;
   margin-top:30px ;
+  display: inline-block;
   @media only screen and (max-width: 900px) {
     margin-right:20px ;
   }
   @media only screen and (max-width: 580px) {
     margin-top:60px ;
-    margin-right:311px ;
+    margin-right:0 ;
+    //margin-right:311px ;
    
   }
   img{
