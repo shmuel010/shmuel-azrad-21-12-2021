@@ -47,8 +47,8 @@ const WeatherPage = () => {
 				function (error) {
 					if (error.code === error.PERMISSION_DENIED) {
 						const defaultTelAvivObj = {
-							Key: '215854',
-							LocalizedName: 'Tel Aviv',
+							Key: '215845',
+							LocalizedName: 'maccabim',
 							Country: 'Israel',
 						};
 						dispatch(getCurrentWeather(defaultTelAvivObj));
