@@ -10,7 +10,7 @@ const environmentReducer = (state = initialState, action) => {
 			const { newIsCelsius } = payload;
 			return { ...state, isCelsius: newIsCelsius };
 		default:
-			return { ...state };
+			return { state };
 	}
 };
 
