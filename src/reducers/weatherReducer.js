@@ -38,7 +38,7 @@ const weatherReducer = (state = initialState, action) => {
 			return { ...state, err, isLoading: false };
 		}
 		default:
-			return { state };
+			return { ...state };
 	}
 };
 
